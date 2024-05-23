@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      .W{
+         position: relative;
+         display: flex;
+         flex-wrap: wrap; 
+         
+         
+         border: 2px solid white;
+      }
+      .t{
+         border: 2px solid white;
+         height: 7vh;
+         width: 100%;
+         position:fixed;
+         top: 0px;
+         background-color: white;
+         z-index: 1;
+      }
+      .U{
+         position: fixed;
+         left: 0;
+      }
+      .R{
+         position: fixed;
+         right: 250px;
+         top:1px;
+
+      }
+      .S{
+         position: fixed;
+         right: 160px;
+         top:1px;
+ 
+      }
+      .V{
+         position: absolute;
+         right: 12%;
+         border: 2px solid white;
+
+
+      }
+      .T{
+         position: fixed;
+         right: 3%;
+         top: 1px;
+      }
+      .Y{
+         position: absolute;
+         top: 4500%;
+         left: 9%;
+      }
+      
+      .Z{
+          border: 2px solid white;
+          position: absolute;
+          top: 10%;
+          left: 10%;
+          display: inline-block;
+      }
+      .A{
+         border: 2px solid white;
+         position: absolute;
+         top:10%;
+         left: 30%;
+         display: inline-block;
+      }
+      .B{
+         border: 2px solid white;
+         position: absolute;
+         top: 10%;
+         left:50%;
+         display: inline-block;
+
+      }
+      .C{
+         border: 2px solid white;
+         position: absolute;
+         top: 10%;
+         left:70%;
+         display: inline-block;
+      }
+      /* .D{
+         border: 2px solid black;
+         position: absolute;
+         top: 5600%;
+         left: 70%;
+      } */
+     
+      .D{
+         border: 2px solid white;
+         height: 300px;
+         width: 100%;
+         position: absolute;
+         top: 4800%;
+
+      }
+       .I{
+         border: 2px solid white;
+         height: 300px;
+         width: 100%;
+         position: absolute;
+         top: 6000%;
+         
+         
+
+       } 
+       .E{
+         display: inline-block;
+         position: absolute;
+         left: 10%;
+         top: 10%;
+
+         
+       }
+       .F{
+         display: inline-block;
+         position: absolute;
+         left: 30%;
+         top: 10%;
+         
+       }
+       .G{
+         display: inline-block;
+         position: absolute;
+         left: 50%;
+         top: 10%;
+         
+       }
+       .H{
+         display: inline-block;
+         position: absolute;
+         left: 70%;
+         top: 10%;
+       }
+       .J{
+         position: absolute;
+         top:7400%;
+         left: 9%;
+       }
+       .k{
+         position: absolute;
+         top:7800%;
+         left: 9%;
+
+       }
+       .M{
+         border: 2px solid white;
+         height: 500px;
+         width: 100%;
+         position: absolute;
+         top: 8000%;
+       }
+       .N{
+         display: inline-block;
+         position: absolute;
+         left: 12%;
+         top:13%;
+       }
+       .O{
+         display: inline-block;
+         position: absolute;
+         left: 35%;
+         top: 13%;
+       }
+       .P{
+         display: inline-block;
+         position: absolute;
+         left: 57%;
+         top: 13%;
+       }
+       .Q{
+         display: inline-block;
+         position: absolute;
+         left: 79%;
+         top: 13%;
+       }
+       .X{
+         color: gray;
+         font-size: x-large;
+       }
+       .W{
+         font-size:large;
+       }
+       [type]{
+         position: absolute;
+         bottom: 16%;
+         width: 300px;
+         height: 30px;
+         left: 1%;
+         background-color: grey;
+         cursor: grab;
+         
+         
+       }
+       .joy{
+         position: absolute;
+         bottom: -1%;
+         width: 300px;
+         height: 30px;
+         cursor: grab;
+         
+       }
+       .lol{
+         position: absolute;
+         bottom: -1%;
+         width: 300px;
+         height: 30px;
+         cursor: grab;
+         
+       }
+       .hire{
+         position: absolute;
+         bottom: 1%;
+         width: 300px;
+         height: 30px;
+         text-align: center;
+         cursor: grab;
+         
+       }
+      [for]{
+         position: absolute;
+         bottom: 32%;
+         left: 40%;
+         text-align: center;
+        
+      }
+      [for="word"]{
+         position: absolute;
+        bottom: 18%; 
+        left: 30%;
+      }
+      .one{
+         position: absolute;
+         bottom: -14%;
+         left: -340%;
+      }
+      .three{
+         position: absolute;
+         bottom: -30%;
+         left:10%;
+      }
+      [placeholder="Name"]{
+         background-color: white;
+         position: absolute;
+         bottom: -42%;
+         left: 10%;
+         width: 90%;
+         font-size: large;
+      }
+      [placeholder="Email"]{
+         background-color: white;
+         position: absolute;
+         bottom: -56%;
+         left: 10%;
+         width: 90%;
+         font-size: large;
+      }
+      [placeholder="Subject"]{
+         background-color: white;
+         position: absolute;
+         bottom: -69%;
+         left: 10%;
+         width: 90%;
+         font-size: large;
+      }
+      [placeholder="comment"]{
+         background-color: white;
+         position: absolute;
+         bottom: -82%;
+         left: 10%;
+         width: 90%;
+         font-size: large;
+      }
+      
+   [value="SEND MESSAGE"]{
+      color: white;
+      background-color: black;
+      position: absolute;
+      bottom: -98%;
+      left: 10%;
+      width: 10%;
+      
+      
+
+   }
+   .six{
+      position: absolute;
+      bottom: -280%;
+      left: 10%;
+
+
+   }
+   .eight{
+      position:absolute;
+      top: -245%;
+      right:43%;
+      color: white;
+      font-size: 40px;
+   }
+   .seven{
+      border: 2px solid black;
+      background-color: black;
+   }
+   .nine{
+      border: 2px solid black;
+      position: absolute;
+      bottom:-300% ;
+      width: 100%;
+      height: 18%;
+      text-align: center;
+      background-color: black;
+      color: white;
+      
+
+      
+      
+      
+   }
+   #ten{
+      position: absolute;
+      bottom: -300%;
+      
+      background-color: black;
+      
+      
+      
+      
+   }
+   [href]{
+      color: white;
+   }
+   .fine{
+      position: absolute;
+      top: 0%;
+      width: 70%;
+      border: 2px solid black;
+      color: white;
+      background-color: black;
+
+   }
+   
+   
+  
+
+
+
+     
+        
+
+   
+      
+
+
+         
+        
+
+    
+     
+    
+     
+   </style>
+</head>
+<body>
+   
+
+<div class="W">
+   <div class="t">
+   <p class="U"><pre><b>B R</b>  Architects</pre></p>
+   <p class="R">Projects</p>
+   <p class="S">About</p>
+   <p class="T">Contact</p>
+   </div>
+  <div class="V">
+  <img src="https://www.w3schools.com/w3images/architect.jpg">
+  </div>
+  <div class="Y"><h3>Projects</h3></div>
+   <hr>
+   <div class="D">
+   <div class="Z"><img src="https://www.w3schools.com/w3images/house5.jpg" height="200px" width="300"><div class="fine"><p>Summer House</p></div></div>
+   <div class="A"><img src="https://www.w3schools.com/w3images/house2.jpg" height="200px" width="300"></div>
+   <div class="B"><img src="https://www.w3schools.com/w3images/house3.jpg"height="200px" width="300"></div>
+    <div class="C"><img src="https://www.w3schools.com/w3images/house4.jpg"height="200px" width="300"></div>
+    <!-- <div class="D"><img src="https://www.w3schools.com/w3images/house2.jpg"height="200" width="300"></div>
+    --></div>
+    <div class="I">
+      <div class="E"><img src="https://www.w3schools.com/w3images/house2.jpg"height="200px" width="300"></div>
+      <div class="F"><img src="https://www.w3schools.com/w3images/house5.jpg"height="200px" width="300"></div>
+      <div class="G"><img src="https://www.w3schools.com/w3images/house4.jpg"height="200px" width="300"></div>
+      <div class="H"><img src="https://www.w3schools.com/w3images/house3.jpg"height="200px" width="300"></div>
+    </div>
+    <div class="J">
+      <h3>About</h3>
+    </div>
+    <div class="k">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </div>
+    <div class="M">
+      <div class="N">
+        <img src="https://www.w3schools.com/w3images/team2.jpg"height="200px" width="300" ><pre><h2> John Doe</h2><p class="X">CEO & Founder</p><p class="W">Phasellus eget enim eu lectus faucibus
+vestibulum. Suspendisse sodales pellentesque 
+elementum.</p>
+</pre> 
+<div class="hire">
+   <input type="submit" value="Contact"/>
+   
+</div>
+                                                                                        
+</div>
+
+        <div class="O">
+         <img src="https://www.w3schools.com/w3images/team1.jpg"height="200px" width="300" ><pre><h2>Jane Doe</h2><p class="fun">Architect</p><p>Phasellus eget enim eu lectus faucibus
+vestibulum.Suspendisse sodales pellentesque 
+elementum.</p>
+</pre> 
+<div class="lol">
+
+   <input type="submit" value="Contact"/>
+
+</div>
+
+        </div>
+        <div class="P"><img src="https://www.w3schools.com/w3images/team3.jpg"height="200px" width="300"><pre><h2>Mike Ross</h2><p>Architect</p><p>Phasellus eget enim eu lectus faucibus
+vestibulum.Suspendisse sodales pellentesque 
+elementum.</p>
+</pre>
+<div class="joy">
+   <input type="submit" value="Contact"/>
+</div>
+</div>
+        <div class="Q"><img src="https://www.w3schools.com/w3images/team4.jpg"height="200px" width="300"><pre><h2>Dan Star</h2><p>Architect</p><p>Phasellus eget enim eu lectus faucibus
+vestibulum.Suspendisse sodales pellentesque
+elementum.</p>
+<div>
+   <input type="submit" value="Contact"/>
+</div>
+</pre>
+
+<div class="one"><h2>Contact</h2></div>
+</div>
+<div class="three">
+ <pre> <p> Lets get in touch and talk about your next project.</p></pre>
+</div>
+<div>
+   <input type="text" name="kavya" id="name" placeholder="Name">
+   <label for="name"></label>
+   </div>
+   <div>
+      <input type="email" name="kavya" id="email" placeholder="Email">
+   <label for="email"></label>
+   </div>
+   <div>
+      <input type="text" name="Subject" id="name" placeholder="Subject">
+   <label for="name"></label>
+   </div>
+   <div>
+      <input type="text" name="comment" id="comment" placeholder="comment">
+   <label for="comment"></label>
+   </div>
+   <div class="four">
+      <br><br><input type="submit" value="SEND MESSAGE"/>
+   </div>
+
+  <div class="six">
+   <img src="https://www.w3schools.com/w3images/map.jpg">
+  </div>
+  <div class="eight">
+   <pre><p><b class="seven">BR</b> Architects</p><pre>
+  </div>
+  <div class="nine">
+   <footer>
+     <pre> <p class="ten">               Powered by <a href="w3.css">w3.css</a></p></pre></footer>
+   </footer>
+
+  </div>
+  
+
+</div>
+</body>
+</html>
+   
+     
